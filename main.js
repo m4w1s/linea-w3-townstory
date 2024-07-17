@@ -18,6 +18,10 @@ const stats = {
 const startTime = Date.now();
 let lastQueueSizeMessage = Date.now();
 
+process.on('uncaughtException', (err) => {
+  console.error(chalk.bgRed(err.stack));
+});
+
 start();
 function start() {
   if (!wallets.length) {
