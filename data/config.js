@@ -1,6 +1,6 @@
 export default {
   // Chain RPC
-  rpcUrl: 'https://1rpc.io/linea',
+  rpcUrl: 'https://linea.blockpi.network/v1/rpc/public',
   // Задержка между транзакциями (в секундах)
   delay: {
     min: 150,
